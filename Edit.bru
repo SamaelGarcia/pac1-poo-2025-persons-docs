@@ -1,0 +1,20 @@
+meta {
+  name: Edit
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{PATH}}/persons/0001200100002
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "firstName" : "Maira Juana",
+    "lastName" : "Lopez",
+    "dni" : "0001199700120",
+    "gender" : "F"
+  }
+}
