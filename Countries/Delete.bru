@@ -1,0 +1,18 @@
+meta {
+  name: Delete
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{PATH}}/countries/728d5b70-d150-4b3c-968c-397f8e6be3fb
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Honduras",
+    "alphaCode3": "HND"
+  }
+}

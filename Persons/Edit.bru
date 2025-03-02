@@ -1,0 +1,21 @@
+meta {
+  name: Edit
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{PATH}}/persons/9c83fac3-8b78-436f-a775-789f8ac36a2c
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "firstName": "Carmen",
+    "lastName": "Perez",
+    "dni": "0001199700150",
+    "gender": "F",
+    "countryID" : "c9ae8d82-c9a2-4445-8db3-01579e3e897c"
+  }
+}
